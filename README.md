@@ -1,6 +1,6 @@
-# Projeto de Autenticação com Laravel e Bootstrap
+# Projeto de Demonstração: Visualização de Dados de Usuários de API
 
-Este é um projeto de autenticação desenvolvido com Laravel e Bootstrap. O projeto abrange funcionalidades de login, cadastro e acesso a um menu básico. Além disso, inclui uma tela que exibe dados de usuários provenientes de uma API externa. Esses dados são tratados e apresentados de forma organizada por meio de um datatable.
+Este é um projeto desenvolvido com Laravel e Bootstrap. O projeto abrange funcionalidades de login, cadastro e acesso a um menu básico. Além disso, inclui uma tela que exibe dados de usuários provenientes de uma API externa. Esses dados são tratados e apresentados de forma organizada por meio de um datatable.
 
 ## Pré-requisitos
 
