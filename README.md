@@ -22,13 +22,14 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
        cd desafio_full_stack_sillion
 
-4. Instale as dependências do PHP usando o Composer:
+3. Instale as dependências do PHP usando o Composer:
 
        composer install
 
-6. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
+4. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
    
-        cp .env.example .env 
+        cp .env.example .env
+       copy .env.example .env
 
     Configure a conexão dentro do arquivo .env com o banco de sua preferência:
 
@@ -53,11 +54,15 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
         Mysql: 'default' => env('DB_CONNECTION', 'mysql'),
         PostgreeSQL:  'default' => env('DB_CONNECTION', 'pgsql'),
 
-7. Execute as migrações para criar as tabelas no banco de dados:
+5. Gere uma chave de criptografia única para o seu aplicativo:
+   
+       php artisan key:generate
+
+6. Execute as migrações para criar as tabelas no banco de dados:
 
         php artisan migrate
 
-8. Instale as dependências do JavaScript usando o npm:
+7. Instale as dependências do JavaScript usando o npm:
 
         npm install
 
