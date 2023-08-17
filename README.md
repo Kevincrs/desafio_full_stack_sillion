@@ -16,10 +16,10 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
 1. Clone este repositório em sua máquina local:
 
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+   git clone https://github.com/Kevincrs/desafio_full_stack_sillion.git
 
 2. Navegue até o diretório do projeto
-    cd NOME_DO_REPOSITORIO
+    cd desafio_full_stack_sillion
 
 3. Instale as dependências do PHP usando o Composer:
     composer install
@@ -52,11 +52,11 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
 5. Execute as migrações para criar as tabelas no banco de dados:
 
-    php artisan migrate
+        php artisan migrate
 
 6. Instale as dependências do JavaScript usando o npm:
 
-    npm install
+        npm install
 
 
 ## Iniciando o Servidor
