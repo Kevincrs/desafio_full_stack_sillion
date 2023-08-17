@@ -16,15 +16,17 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
 1. Clone este repositório em sua máquina local:
 
-   git clone https://github.com/Kevincrs/desafio_full_stack_sillion.git
+       git clone https://github.com/Kevincrs/desafio_full_stack_sillion.git
 
 2. Navegue até o diretório do projeto
-    cd desafio_full_stack_sillion
 
-3. Instale as dependências do PHP usando o Composer:
-    composer install
+       cd desafio_full_stack_sillion
 
-4. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
+4. Instale as dependências do PHP usando o Composer:
+
+       composer install
+
+6. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
    
         cp .env.example .env 
 
@@ -51,11 +53,11 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
         Mysql: 'default' => env('DB_CONNECTION', 'mysql'),
         PostgreeSQL:  'default' => env('DB_CONNECTION', 'pgsql'),
 
-6. Execute as migrações para criar as tabelas no banco de dados:
+7. Execute as migrações para criar as tabelas no banco de dados:
 
         php artisan migrate
 
-7. Instale as dependências do JavaScript usando o npm:
+8. Instale as dependências do JavaScript usando o npm:
 
         npm install
 
