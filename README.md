@@ -25,7 +25,8 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
     composer install
 
 4. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
-    cp .env.example .env 
+   
+        cp .env.example .env 
 
     Configure a conexão dentro do arquivo .env com o banco de sua preferência:
 
@@ -50,11 +51,11 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
         Mysql: 'default' => env('DB_CONNECTION', 'mysql'),
         PostgreeSQL:  'default' => env('DB_CONNECTION', 'pgsql'),
 
-5. Execute as migrações para criar as tabelas no banco de dados:
+6. Execute as migrações para criar as tabelas no banco de dados:
 
         php artisan migrate
 
-6. Instale as dependências do JavaScript usando o npm:
+7. Instale as dependências do JavaScript usando o npm:
 
         npm install
 
