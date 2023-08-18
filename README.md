@@ -6,7 +6,7 @@ Este é um projeto desenvolvido com Laravel e Bootstrap. O projeto abrange funci
 
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes de começar:
 
-- [PHP](https://www.php.net/downloads.php) (>= 7.x)
+- [PHP](https://www.php.net/downloads.php) (>= 8.x)
 - [Composer](https://getcomposer.org/download/)
 - [Node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com/downloads)
