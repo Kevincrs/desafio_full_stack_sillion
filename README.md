@@ -45,12 +45,16 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
         
         docker exec -it desafio-full-stack composer install
 
-
-6. Execute as migrações para criar as tabelas no banco de dados:
+5. Gere uma chave de criptografia única para o seu aplicativo:
+   
+       docker exec -it desafio-full-stack php artisan key:generate
+   
+7. Execute as migrações para criar as tabelas no banco de dados:
 
        docker exec -it desafio-full-stack php artisan migrate
 
-7. Abra o navegador e acesse http://localhost:9000 para visualizar o projeto.
+8. Abra o navegador e acesse http://localhost:9000 para visualizar o projeto.
+
 
 ## Configuração sem Docker
 
