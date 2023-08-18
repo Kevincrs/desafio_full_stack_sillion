@@ -10,7 +10,7 @@ class RandomUserController extends Controller
     public function getRandomData()
     {
         // Faz a requisição à API e obtém a resposta JSON
-        $response = Http::get('https://random-data-api.com/api/v2/users?size=21');
+        $response = Http::get('https://random-data-api.com/api/v2/users?size=100');
         $random_users = $response->json(); // Converte a resposta JSON em um array associativo
 
         // Retorna a view 'random_users.index' e passa os dados dos usuários aleatórios para a view

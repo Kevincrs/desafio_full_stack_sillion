@@ -11,8 +11,31 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 - [Node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com/downloads)
 - [MySQL](https://dev.mysql.com/downloads/installer/) ou outro sistema de gerenciamento de banco de dados suportado
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/) 
 
-## Configuração
+## Configuração usando Docker (opcional)
+
+1. Clone este repositório em sua máquina local:
+
+       git clone https://github.com/Kevincrs/desafio_full_stack_sillion.git
+
+2. Navegue até o diretório do projeto
+
+       cd desafio_full_stack_sillion
+
+3. Construa e inicie os contêineres Docker com o seguinte comando:
+
+       docker-compose build
+       docker-compose up -d
+
+4. Aguarde até que os contêineres estejam em execução e então execute as migrações para criar as tabelas no banco de dados:
+
+       docker exec -it desafio-full-stack php artisan migrate
+
+5. Abra o navegador e acesse http://localhost:9000 para visualizar o projeto.
+
+## Configuração sem Docker
 
 1. Clone este repositório em sua máquina local:
 
