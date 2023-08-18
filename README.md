@@ -23,17 +23,34 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 2. Navegue até o diretório do projeto
 
        cd desafio_full_stack_sillion
+    
+3. Copie o arquivo .env.example e renomeie-o para .env. Configure as variáveis de ambiente, incluindo as configurações do banco de dados, crie o banco de dados:
+   
+    3.1 Abra o arquivo .env em um editor de texto e insira as seguintes configurações de banco de dados que estão pré-definidas no arquivo Dockerfile. Caso deseje mudar, você precisará alterar as configurações em ambos os arquivos Dockerfile e .env:
 
-3. Construa e inicie os contêineres Docker com o seguinte comando:
+        DB_CONNECTION=mysql
+        DB_HOST=mysql_db
+        DB_PORT=3306
+        DB_DATABASE=dfss
+        DB_USERNAME=root
+        DB_PASSWORD=root
+
+4. Construa e inicie os contêineres Docker com o seguinte comando:
 
        docker-compose build
+
        docker-compose up -d
 
-4. Aguarde até que os contêineres estejam em execução e então execute as migrações para criar as tabelas no banco de dados:
+5. Instale as dependências do Composer no contêiner Laravel (isso é necessário antes de executar as migrações):
+        
+        docker exec -it desafio-full-stack composer install
+
+
+6. Aguarde até que os contêineres estejam em execução e então execute as migrações para criar as tabelas no banco de dados:
 
        docker exec -it desafio-full-stack php artisan migrate
 
-5. Abra o navegador e acesse http://localhost:9000 para visualizar o projeto.
+7. Abra o navegador e acesse http://localhost:9000 para visualizar o projeto.
 
 ## Configuração sem Docker
 
