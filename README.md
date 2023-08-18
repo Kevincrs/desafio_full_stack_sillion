@@ -41,12 +41,12 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
        docker-compose up -d
 
-5. Instale as dependências do Composer no contêiner Laravel (isso é necessário antes de executar as migrações):
+5. Aguarde até que os contêineres estejam em execução e então instale as dependências do Composer (isso é necessário antes de executar as migrações):
         
         docker exec -it desafio-full-stack composer install
 
 
-6. Aguarde até que os contêineres estejam em execução e então execute as migrações para criar as tabelas no banco de dados:
+6. Execute as migrações para criar as tabelas no banco de dados:
 
        docker exec -it desafio-full-stack php artisan migrate
 
